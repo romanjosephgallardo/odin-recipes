@@ -1,0 +1,121 @@
+/* Styling for index.html */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #ffffff;
+    --secondary-color: #d6b999;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: url(../images/main_background.png) no-repeat center center/cover;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Vivaldi Std';
+    src: url('../fonts/Vivaldi\ Std.woff') format('woff'),
+         url('../fonts/Vivaldi\ Std.ttf') format('truetype'),
+         url('../fonts/Vivaldi\ Std.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Engravers MT';
+    src: url('../fonts/Engravers\ MT.woff') format('woff'),
+         url('../fonts/Engravers\ MT.ttf') format('truetype'),
+         url('../fonts/Engravers\ MT.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/Helvetica.woff') format('woff'),
+         url('../fonts/Helvetica.ttf') format('truetype'),
+         url('../fonts/Helvetica.woff2') format('woff2');
+         font-style: normal;
+         font-weight: lighter;
+}
+
+
+/* Main Content */
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+    position: relative;
+}
+
+.middle-content h1 {
+    font-size: 90px;
+    font-family: 'Vivaldi Std', 'Palace Script MT', 'Brush Script MT', cursive;
+    color: #fff;
+    text-shadow: 2px 1px 1px var(--secondary-color);
+    text-align: center;
+    font-weight: 400;
+    margin:0%
+}
+
+#frameline {
+    display: block;
+    width: 15rem;
+    margin: 2px auto;
+}
+
+/* Section */
+.recipes-list{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    width: 50%;
+}
+
+.recipes-list ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.recipe-name {
+    padding-left: 10px;
+    margin-left: 10px;
+    color: var(--main-color);
+}
+
+.recipe-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-name.engravers-mt{
+    font-family: 'Engravers MT', sans-serif;
+    font-size: 23px;
+    margin: 1px;
+    transform: scaleX(0.9);
+}
+
+.recipe-name.helvetica-neue{
+    font-family: Helvetica, 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 1px;
+}
+
+.recipe-name.vivaldi-std{
+    font-family: 'Vivaldi Std', sans-serif;
+    font-size: 25px;
+    margin: 1px;
+    font-weight: 100;
+}

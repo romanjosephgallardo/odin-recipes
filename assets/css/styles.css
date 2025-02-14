@@ -7,14 +7,18 @@
 }
 
 :root{
-    --main-color: #ffffff;
+    --main-color: #efe8ea;
     --secondary-color: #d6b999;
 }
 
 body {
+    margin: 15px 30px;
+    padding: 10px;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    background: url(../images/main_background.png) no-repeat center center/cover;
+    background: url(../images/main_background.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Fonts */
@@ -44,6 +48,79 @@ body {
          font-style: normal;
          font-weight: lighter;
 }
+
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url('../fonts/Friz\ Quadrata.woff') format('woff'),
+         url('../fonts/Friz\ Quadrata.ttf') format('truetype'),
+         url('../fonts/Friz\ Quadrata.woff2') format('woff2');
+         font-style: normal;
+         font-weight: lighter;
+}
+
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-name h1{
+    font-family: 'Vivaldi Std', 'Palace Script MT', 'Brush Script MT', cursive;
+    font-size: 50px;
+    color: var(--main-color);
+    text-shadow: 2px 1px 1px var(--secondary-color);
+    font-weight: 400;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    color: inherit;
+    gap: 20px
+}
+
+.navbar-item {
+    margin: 0 20px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-menu.item-menu{
+    margin-right: 40px;
+}
+
+.navbar-menu.odin-icon img {
+    width: 40px;  
+    height: auto;
+    flex-shrink: 1;
+    scale: 1.2;
+}
+
+
+
 
 
 /* Main Content */

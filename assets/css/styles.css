@@ -19,6 +19,7 @@
     --font-small: 15px;
     --font-medium: 20px;
     --font-large: 25px;
+    --font-large-2: 30px;
     --font-larger: 50px;
     --font-largest: 100px;
 
@@ -139,6 +140,8 @@ nav {
 section{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Hero Section */
@@ -300,7 +303,60 @@ section{
     border-radius: 25px;
     border: 2px solid var(--secondary-color);
     margin-top: 10px;
-
 }
 
+/* About Us Section */
+.about-us-section{
+    min-width: 100px;
+    text-align: center;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    margin-bottom: 100px;
+}
 
+.about-us-container h1{
+    font-family: var(--Vivaldi-Std);
+    font-size: var(--font-largest);
+    color: var(--main-color);
+    text-shadow: 2px 1px 1px var(--secondary-color);
+    font-weight: 400;
+    transform: translate(-8px); /* Specifically center the text (because of the font) */
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.about-us-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 1250px;
+    align-items: center;
+}
+
+.about-us-contents .subtitle-text{
+    font-family: var(--Helvetica);
+    font-size: var(--font-large-2);
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 50%;
+    text-align: left;
+}
+
+.about-us-contents img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-bottom: -30px;
+    -webkit-filter: drop-shadow(5px 5px 5px var(--secondary-color))
+                    blur(1px); 
+    filter: drop-shadow(0 0 30px var(--secondary-color)) 
+           drop-shadow(0 0 50px var(--secondary-color)) 
+           drop-shadow(0 0 70px var(--secondary-color)) 
+           brightness(95%);
+}

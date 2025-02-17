@@ -67,13 +67,20 @@
 }
 
 body {
-    margin: 15px 30px;
-    padding: 10px;
+    margin: 0; 
+    padding: 0;
     font-family: var(--Helvetica);
     min-height: 100vh;
     background: url(../images/main_background.png) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* Content Wrapper for the body */
+.content-wrapper {
+    margin: 15px 30px;
+    padding: 10px;
+    flex: 1;
 }
 
 /* Navigation Bar */
@@ -367,7 +374,7 @@ section{
     color: var(--main-color);
     display: flex;
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .contact-us-container h1{
@@ -488,3 +495,197 @@ section{
     font-size: var(--font-small);
 }
 
+/* ---------------------- */
+/* Footer Contents */
+/* ---------------------- */
+.footer {
+    width: 100%;
+    background: var(--quaternary-color);
+    border-top: 2px solid rgba(255, 255, 255, 0.18);
+    padding: 40px;
+    margin-top: auto;
+    position: relative;
+    left: 0;
+    min-width: 1200px; 
+    overflow-x: auto;  
+}
+
+.footer-contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+/* Website Icons */
+.footer-contents .footer-logo{
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer-logo h1{
+    font-family: var(--Vivaldi-Std);
+    font-size: 90px;
+    color: var(--main-color);
+    text-shadow: 2px 1px 1px var(--secondary-color);
+    font-weight: 400;
+}
+
+.footer-logo p{
+    font-family: var(--Helvetica);
+    font-size: var(--font-smallest);
+    color: var(--main-color);
+    font-weight: 400;
+    text-align: center;
+    margin-top: -13px;
+}
+
+/* Menu Container */
+.footer-contents.menu-container{
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    gap: 100px;
+    flex-shrink: 0;
+}
+
+/* Social Media */
+.social-media h2{
+    font-family: var(--Helvetica);
+    font-size: var(--font-smaller);
+    color: var(--main-color);
+    text-transform: uppercase; 
+    font-weight: 700;
+}
+
+.social-media li{
+    font-size: var(--font-smallest);
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-color);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin: 3px 0 3px 0;
+}
+
+.social-media ul{
+    margin-top: -5px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.social-media-icons img{
+    width: 25px;
+    height: auto;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Chef Names */
+.chef-names h2{
+    font-family: var(--Helvetica);
+    font-size: var(--font-smaller);
+    color: var(--main-color);
+    text-transform: uppercase; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.chef-names li{
+    font-size: var(--font-smallest);
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-color);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin: 3px 0 3px 0;
+}
+
+.chef-names a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.chef-names ul{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+
+/* Other Info */
+.other-info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.other-info h6{
+    font-family: var(--Helvetica);
+    font-size: var(--font-small);
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.other-info a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.odin-logo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-logo p{
+    font-family: var(--Helvetica);
+    font-size: 8px;
+    color: var(--main-color);
+    font-weight: 400;
+    text-align: center;
+    width: 60%;
+    margin-top: 10px
+}
+
+.odin-logo #githubLink{
+    margin-top: 3px;
+    font-size: 9px;
+}
+
+.odin-logo .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.odin-logo img{
+    width: 250px;
+    height: auto;
+    transform: translateX(6px);
+    margin: 10px;
+}
+
+.odin-logo .image-container{
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    border: var(--secondary-color) 2px solid;
+    padding: 10px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.077)) ;
+}

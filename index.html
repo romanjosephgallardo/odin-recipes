@@ -33,7 +33,7 @@
                                 <a href="#about-us">About Us</a>
                             </li>
                             <li class="navbar-item contact">
-                                <a href="">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -145,6 +145,38 @@
                 </div>
             </section>
 
+            <!-- Contact Us Section -->
+            <section class="contact-us-section" id="contact">
+                <div class="contact-us-container">
+                    <h1 class="title-text"> Contact Us </h1>
+                </div>
+
+                <!-- Contact Us Form -->
+                <div class="contact-us-form">
+                    <p class="subtitle-text">
+                        Have a question or feedback? We'd love to hear from you! 
+                        <br> Fill out the form below and we'll get back to you as soon as possible.
+                    </p>
+                    <div class="form-container">
+                        <form method="post">
+                            <div class="name-email">
+                                <label for="name">Enter your name:</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="email">Enter your email address:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <input type="submit" id="submit-btn" value="Submit">
+                            </div>
+                            
+                            <div class="message-area">
+                                <label for="message">Your Message:</label>
+                                <textarea id="form message" name="message" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

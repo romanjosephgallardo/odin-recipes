@@ -1,8 +1,18 @@
-# odin-recipes
-This project is a collection of delicious recipes created using HTML structure. It includes the following recipes:
+# Odin Recpies
 
+A simple static recipe website built with HTML and CSS.
+
+## Recipes Included
+
+- [Famous Chicken Adobo](recipes/famous-chicken-adobo.html)
 - [Touchdown Pizza](recipes/touchdown-pizza.html)
 - [Philadelphia-Style Roast Pork Sandwiches](recipes/philadelphia-style-roast-pork-sandwiches.html)
 - [Hot Dog Burnt Ends](recipes/hot-dog-burnt-ends.html)
 
-Each recipe includes a description, list of ingredients, and step-by-step directions to prepare the dish. Enjoy cooking!
+This project was created to learn and practice:
+- HTML structure and semantic elements
+- CSS styling and layout techniques
+- Responsive web design
+- Basic web development skills
+
+Built as part of **The Odin Project** web development course.

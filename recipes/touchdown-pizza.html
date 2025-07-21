@@ -4,37 +4,94 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Touchdown Pizza</title>
+
+        <!-- Link for CSS -->
+        <link rel="stylesheet" href="../assets/css/recipe-styles.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        
     </head>
     <body>
-        <a href="../index.html">Home</a>
-        <h1> Touchdown Pizza </h1>
-        <img src="../assets/images/touchdown_pizza.jpeg" alt="Touchdown Pizza" width="500" height="400">
-        
-        <h4> <em>Recipe by:<a href="https://www.allrecipes.com/recipe/230760/touchdown-pizza/" target="_blank" rel="noopener noreferrer"> All Recipes</a></em></h4>
-        <h3> Description: </h3>
-        <p> My favorite sports pub serves this, and I've come up with a simple and delicious home version.
-            Many local restaurants sell wing sauce, and most grocery stores carry it near the steak and
-            BBQ sauces. It's rich, so serve in squares as an appetizer. Serve ranch dressing, celery, and
-            carrot sticks on the side. Enjoy!</p>
-        
-        <!-- Ingredients and Directions -->
-        <h3> Ingredients: </h3>
-        <ul>
-            <li> 1 (14 ounce) package prebaked pizza crust (such as Boboli®)</li>
-            <li> 1 cup diced cooked chicken breast</li>
-            <li> 3 tablespoons Buffalo wing sauce</li>
-            <li> ½ cup Buffalo wing sauce </li>
-            <li> 1 (4 ounce) package crumbled blue cheese</li>
-            <li> 1 stalk celery, thinly sliced </li>
-        </ul>
+        <div class="content-wrapper">
+            <!-- Header -->
+            <header class="header">
+                <nav class="navbar">
 
-        <h3> Directions: </h3>
-        <ol>
-            <li>Preheat oven to 475 degrees F (245 degrees C). Line a baking sheet with aluminum foil.</li>
-            <li>Place pizza crust on the prepared baking sheet.</li>
-            <li>Mix chicken and 3 tablespoons wing sauce together in a bowl until evenly coated.</li>
-            <li>Spread 1/2 cup wing sauce on the pizza crust; top with blue cheese, chicken mixture, and celery. Cover pizza with mozzarella cheese.</li>
-            <li>Bake in the preheated oven until pizza is cooked through and cheese is bubbling, about 12 minutes. Cool pizza about 5 minutes before cutting into squares.</li>
-        </ol>
+                    <!-- Site Name -->
+                    <div class="site-name">
+                        <h1> Odin Recipes </h1>
+                    </div>
+                    
+                    <!-- Menu -->
+                    <div class="navbar-menu"> 
+                        <div class="navbar-menu item-menu"> 
+                            <ul>
+                                <li class="navbar-item home">
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li class="navbar-item recipes">
+                                    <a href="../index.html#recipes">Recipes</a>
+                                </li>
+                                <li class="navbar-item about-us">
+                                    <a href="../index.html#about-us">About Us</a>
+                                </li>
+                                <li class="navbar-item contact">
+                                    <a href="../index.html#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Odin Icon -->
+                        <div class="navbar-menu odin-icon">
+                            <img src="../assets/images/odin_icon.png" alt="Odin Icon">
+                        </div>
+                    </div>
+                    
+                </nav>
+            </header>
+
+            <div class="recipe-content-container">
+                <div id="recipe-img-wrapper">
+                    <img src="../assets/images/touchdown_pizza.jpeg" alt="Touchdown Pizza" class="recipe-img-circle">
+                </div>
+                
+                <div id="recipe-container">
+                    <h1> Touchdown Pizza </h1>
+                    
+                    <h4> <em>Recipe by:<a href="https://www.allrecipes.com/recipe/230760/touchdown-pizza/" target="_blank" rel="noopener noreferrer"> All Recipes</a></em></h4>
+                    <p> My favorite sports pub serves this, and I've come up with a simple and delicious home version. Many local restaurants sell wing sauce, and most grocery stores carry it near the steak and BBQ sauces. It's rich, so serve in squares as an appetizer. Serve ranch dressing, celery, and carrot sticks on the side. Enjoy!</p>
+                    
+                    <div id="frame-line-recipe">
+                        <img src="../assets/images/frameline.png" alt="frame-line">
+                    </div>
+
+                    <!-- Ingredients and Directions -->
+                    <div class="recipe-content">
+                        <div class="ingredients-section">
+                            <h3> Ingredients: </h3>
+                            <ul>
+                                <li> 1 (14 ounce) package prebaked pizza crust (such as Boboli®)</li>
+                                <li> 1 cup diced cooked chicken breast</li>
+                                <li> 3 tablespoons Buffalo wing sauce</li>
+                                <li> ½ cup Buffalo wing sauce </li>
+                                <li> 1 (4 ounce) package crumbled blue cheese</li>
+                                <li> 1 stalk celery, thinly sliced </li>
+                                <li> 1 cup shredded mozzarella cheese </li>
+                            </ul>
+                        </div>
+
+                        <div class="instructions-section">
+                            <h3> Directions: </h3>
+                            <ol>
+                                <li>Preheat oven to 475 degrees F (245 degrees C). Line a baking sheet with aluminum foil.</li>
+                                <li>Place pizza crust on the prepared baking sheet.</li>
+                                <li>Mix chicken and 3 tablespoons wing sauce together in a bowl until evenly coated.</li>
+                                <li>Spread 1/2 cup wing sauce on the pizza crust; top with blue cheese, chicken mixture, and celery. Cover pizza with mozzarella cheese.</li>
+                                <li>Bake in the preheated oven until pizza is cooked through and cheese is bubbling, about 12 minutes. Cool pizza about 5 minutes before cutting into squares.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
